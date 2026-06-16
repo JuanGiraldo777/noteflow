@@ -80,6 +80,7 @@ export default function NuevaNotaScreen() {
       addNote({
         id,
         title,
+        type: 'note',  
         content,
         createdAt: now,
         updatedAt: now,
@@ -104,6 +105,7 @@ export default function NuevaNotaScreen() {
       addChecklist({
         id,
         title,
+        type: 'checklist',
         items: validItems.map(text => ({
           id: Crypto.randomUUID(),
           text,
@@ -127,6 +129,7 @@ export default function NuevaNotaScreen() {
       addIdea({
         id,
         title,
+        type: 'idea', 
         tags,
         color: selectedColor,
         createdAt: now,

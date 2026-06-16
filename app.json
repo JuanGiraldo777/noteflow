@@ -16,6 +16,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.juangiraldo.noteflow",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -27,7 +28,16 @@
     },
     "plugins": [
       "expo-router",
-      "expo-asset"
-    ]
+      "expo-asset",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6e692b76-d6c9-43bf-90bd-ac20c0521702"
+      }
+    },
+    "owner": "juan-giraldo-team"
   }
 }

@@ -22,9 +22,9 @@ export function IdeaCard({ idea, onPress, animationDelay = 0 }: IdeaCardProps) {
           <Text style={styles.title} numberOfLines={1}>
             {idea.title}
           </Text>
-          {idea.tags.length > 0 && (
+          {(idea.tags ?? []).length > 0 && (
             <View style={styles.tags}>
-              {idea.tags.slice(0, 3).map((tag) => (
+              {(idea.tags ?? []).slice(0, 3).map((tag) => (
                 <Chip key={tag} style={styles.chip} textStyle={styles.chipText}>
                   {tag}
                 </Chip>

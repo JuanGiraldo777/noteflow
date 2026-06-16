@@ -1,6 +1,7 @@
 export interface BaseNote {
   id: string;
   title: string;
+  type: 'note' | 'checklist' | 'idea';
   createdAt: Date;
   updatedAt: Date;
   isArchived: boolean;
